@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-// import Hero from '~/components/widgets/Hero.astro';
+import Hero from '~/components/widgets/Hero.astro';
 // import Note from '~/components/widgets/Note.astro';
 // import Features from '~/components/widgets/Features.astro';
 // import Features2 from '~/components/widgets/Features2.astro';
@@ -13,12 +13,31 @@ import Layout from '~/layouts/PageLayout.astro';
 // import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'ZeniMotion — Enabling the Future of Robotics Research & Infrastructure',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
+  <Hero
+    actions={[{ text: 'Learn more', href: '#features' }]}
+    image={{ src: '~/assets/images/delta/hand.jpeg', alt: 'ZeniMotion Hero Image' }}
+  >
+    <Fragment slot="title">
+      Enabling the <span class="hidden xl:inline">Future of</span>
+      <span class="text-accent dark:text-white highlight"> Robotics</span> Research & Infrastructure
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">ZeniMotion</span> is building the foundation for next-generation robotics.</span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">ZeniMotion: Production-ready.</span>
+      Advancing simulation, AI training, and human-robot interaction to accelerate innovation and push the boundaries of
+      what robots can achieve.
+    </Fragment>
+  </Hero>
+
   <!-- Hero Widget ******************* -->
   <!--
   <Hero
