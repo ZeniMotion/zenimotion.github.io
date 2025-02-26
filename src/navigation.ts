@@ -47,12 +47,12 @@ export const headerData = {
         //   href: getPermalink('/contact'),
         // },
         {
-          text: 'Terms',
-          href: getPermalink('/terms'),
+          text: 'Terms & Conditions',
+          href: getPermalink('/terms-and-conditions'),
         },
         {
           text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          href: getPermalink('/privacy-policy'),
         },
       ],
     },
@@ -166,8 +166,8 @@ export const footerData = {
     //   },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Terms & Conditions', href: getPermalink('/terms-and-conditions') },
+    { text: 'Privacy Policy', href: getPermalink('/privacy-policy') },
   ],
   socialLinks: [
     //   { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
